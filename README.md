@@ -1,7 +1,7 @@
 # react-ajax-grid
 React Ajax Grid
 ----------------
-
+![Sample Image](http://i58.tinypic.com/n21f7a.jpg)
 React ajax grid is simple grid for react.It can sort,filter your data.Just you need to pass dataUrl and column names.You can  show multidimensional array column name like in example Category.Name . 
 
 Usage:
@@ -14,7 +14,7 @@ Usage:
             this.dataUrl = "/GetData/";
         },
         render:function(){
-        return (<AjaxGridComponent dataUrl={this.dataUrl} filter={true} showExternalColumn={true} externalColumns={this.externalColumns} defaultColumns={this.defaultColumns} />);
+        return (<AjaxGridComponent dataUrl={this.dataUrl} filter={true} controllerName={'GetData'} showExternalColumn={true} externalColumns={this.externalColumns} defaultColumns={this.defaultColumns} />);
         }
     });
 
