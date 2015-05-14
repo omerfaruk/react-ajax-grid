@@ -14,7 +14,7 @@ Usage:
             this.dataUrl = "/GetData/";
         },
         render:function(){
-        return (<AjaxGridComponent dataUrl={this.dataUrl} filter={true} controllerName={'GetData'} showExternalColumn={true} externalColumns={this.externalColumns} defaultColumns={this.defaultColumns} />);
+        return (<AjaxGridComponent dataUrl={this.dataUrl} filter={true} showExternalColumn={true} externalColumns={this.externalColumns} defaultColumns={this.defaultColumns} />);
         }
     });
 
