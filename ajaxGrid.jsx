@@ -123,7 +123,7 @@ var Rows = React.createClass({
                     var Tag = column[1];
 
                     return (<td>
-                        <Tag rowData={rowData} controllerName={that.props.controllerName} />
+                        <Tag rowData={rowData} />
                     </td>
                     );
 
@@ -225,7 +225,7 @@ var AjaxGridComponent = React.createClass({
         var that = this;
 
          var columns =<HeaderRow defaultColumns={this.props.defaultColumns} sortColumn={that.sortColumn} orderBy={that.orderBy} onClick={that.handleSort} externalColumns={this.props.externalColumns} />;
-         var rows =<Rows controllerName={this.props.controllerName} defaultColumns={this.props.defaultColumns} results={that.state.results} externalColumns={this.props.externalColumns} />;
+         var rows =<Rows defaultColumns={this.props.defaultColumns} results={that.state.results} externalColumns={this.props.externalColumns} />;
         var pagination = <Pagination maxPages={this.maxPages} currentPage={this.index} onClick={that.handlePaging} />
         return(
         <div  className="table-responsive">
